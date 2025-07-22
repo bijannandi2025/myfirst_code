@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.env
+.DS_Store
+dist/
+build/
+*.log
+docker-compose.override.yml
+*.sqlite3
+.vscode/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Docker
+*.tar
+*.bak
+.env
+
