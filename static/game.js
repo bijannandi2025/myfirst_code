@@ -38,8 +38,8 @@ function drawPlatforms() {
 
 function update() {
     // Movement
-    if (keys['ArrowLeft']) player.velocityX = -3;
-    else if (keys['ArrowRight']) player.velocityX = 3;
+    if (keys['ArrowLeft']) player.velocityX = -8;
+    else if (keys['ArrowRight']) player.velocityX = 10;
     else player.velocityX = 0;
 
     if (keys['Space'] && player.onGround) {

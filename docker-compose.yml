@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  mario-game:
+    image: python:3.11-slim
+    container_name: mario-live
+    working_dir: /app
+    volumes:
+      - .:/app   # 👈 Mount current project dir
+    ports:
+      - "5000:5000"
+    command: bash -c "pip install -r requirements.txt && python app.py"
+    command: bash -c "pip install -r requirements.txt && pip install watchdog && python app.py"
+
